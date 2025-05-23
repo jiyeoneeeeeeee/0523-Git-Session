@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>편지 쓰기</title>
+    <link rel="stylesheet" href="../css/write.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="back-btn" onclick="goBack()">
+          <img src="../images/backBtn.svg" alt="back" width="30px" />
+        </div>
+
+        <div class="content">
+          <div class="title">
+            <input
+              type="text"
+              id="titleInput"
+              placeholder="제목을 입력해 주세요"
+            />
+          </div>
+
+          <div class="content-box">
+            <div class="date" id="dateDisplay"></div>
+            <textarea
+              id="contentInput"
+              placeholder="내용 입력"
+              rows="10"
+              cols="30"
+            ></textarea>
+          </div>
+
+          <button class="write-btn" onclick="handleWrite()">작성하기</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/write.js"></script>
+  </body>
+</html>
