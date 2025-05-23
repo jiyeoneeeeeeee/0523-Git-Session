@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>read</title>
+    <link rel="stylesheet" href="../css/read.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="box" id="box">
+        <img
+          src="../images/backbtn.svg"
+          alt="back"
+          width="30px"
+          onclick="goBack()"
+          id="back-btn"
+          class="back-btn"
+        />
+        <div class="content" id="content">
+          <div class="title" id="title"></div>
+          <div class="content-box" id="content-box">
+            <div class="date" id="date"></div>
+            <div class="post-content" id="post-content"></div>
+          </div>
+          <button class="delete-btn" id="delete-btn">삭제하기</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/read.js"></script>
+  </body>
+</html>
